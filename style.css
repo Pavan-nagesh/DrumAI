@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.head-panel {
+  display: flex;
+  height: 90px;
+  background-color: #232f3e;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  font-family: "Irish", cursive;
+  user-select: none;
+}
+
+.drums-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e2e7e6;
+  gap: 25px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.drum {
+  outline: none;
+  border: 4px solid #232f3e;
+  font-size: 2rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #232f3e;
+  text-shadow: 2px 0 #DBEDF3;
+  border-radius: 15px;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  margin: 3px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  transition: transform 0.1s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 6px black;
+}
+
+.drum:hover {
+  transform: scale(1.05);
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.teach-highlight {
+  box-shadow: 0 0 15px 5px #FFD700;
+  transform: scale(1.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.controls {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#suggest-rhythm, #teach-mode, #stop-all {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #232f3e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  margin: 0 5px;
+}
+
+#suggest-rhythm:hover, #teach-mode:hover, #stop-all:hover {
+  background-color: #3b4a66;
+}
+
+#rhythm-display {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #232f3e;
+  min-height: 2rem;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+#display-key {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #232f3e;
+  font-weight: 600;
+  user-select: none;
+}
+
+footer {
+  background-color: #232f3e;
+  color: #DBEDF3;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.foot-panel img {
+  width: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+  filter: brightness(1) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.foot-panel img:hover {
+  transform: scale(1.2);
+}
+
+/* Background images for each drum button */
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/kick.png");
+}
+
+.l {
+  background-image: url("images/crash.png");
+}
